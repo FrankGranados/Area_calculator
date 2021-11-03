@@ -1,0 +1,11 @@
+.container .content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.container .card{
+    width: 45%;
+    display: inline-block;
+    vertical-align: top;
+}

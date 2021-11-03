@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/297c623535.js" crossorigin="anonymous"></script>
+        <title>Calculadora Geometrica</title>
+
+        
+        <!-- MEDIAQUERYS -->
+        <link rel="stylesheet" href="./css/default.css">
+        <link rel="stylesheet" href="./css/mobile.css">
+
+        <link 
+            rel="stylesheet" 
+            href="./css/tablet.css" 
+            media="screen and (min-width: 550px)"/>
+
+        <link 
+            rel="stylesheet" 
+            href="./css/desktop.css" 
+            media="screen and (min-width: 1000px)"/>
+
+        <link 
+        rel="stylesheet" 
+        href="./css/desktopM.css" 
+        media="screen and (min-width: 1400px)"/>
+
+    </head>
+
+    <body>
+        
+        <section class="container">
+            <!-- Card Title -->
+            <div class="title">
+                <picture>
+                    <source media="(min-width: 1000px)" srcset="./images/header_large.jpg">
+                    <source media="(min-width: 600px)" srcset="./images/header_mid.jpg">
+                    <img src="./images/header_small.jpg" alt="header">
+                </picture>
+                <h2>Area calculator <i class="fas fa-shapes"></i></h2>
+            </div>
+
+            <section class="content">
+
+                <!-- 👉 Rectangle -->
+                <section class="card">
+                    <!-- Subtitle -->
+                    <div class="subtitle">
+                        <hr>
+                        <h3><i class="far fa-hand-point-right"></i>  Rectangle area</h3>
+                        <p>What are the dimensions of your rectangle?</p>
+                    </div>
+                    <!-- Shape image -->
+                    <div class="image">
+                        <img src="./images/rectangle_area.png" alt="">
+                    </div>
+                    <!-- Form -->
+                    <div class="form">
+                        <input type="text" placeholder="base (b)" id="base_r" value="">
+                        <input type="text" placeholder="height (h)" id="height_r" value="">
+                        <button id="Rectangle_btn" onclick="rectangle()">Calculate</button>
+                        
+                    </div>
+                    <!-- Result -->
+                    <div class="result">
+                        <ul>
+                            <li>Area: <span id="Rectangle_area"></span></li>
+                            <li>Perimetro: <span id="Rectangle_perimeter"></span></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 👉 Triangle -->
+                <section class="card">
+                    <!-- Subtitle -->
+                    <div class="subtitle">
+                        <hr>
+                        <h3><i class="far fa-hand-point-right"></i>  Triangle area</h3>
+                        <p>What are the dimensions of your triangles?</p>
+                    </div>
+                    <!-- Shape image -->
+                    <div class="image">
+                        <img src="./images/triangle_area.png" alt="">
+                    </div>
+                    <!-- Form -->
+                    <div class="form">
+                        <input type="text" placeholder="side b" id="side_b" value="">
+                        <input type="text" placeholder="height (h)" id="height_t" value="">
+                        <button id="triangle_btn" onclick="triangle()">Calculate</button>
+                        
+                    </div>
+                    <!-- Result -->
+                    <div class="result">
+                        <ul>
+                            <li>Area: <span id="triangle_area"></span></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 👉 Circle -->
+                <section class="card">
+                    <!-- Subtitle -->
+                    <div class="subtitle">
+                        <hr>
+                        <h3><i class="far fa-hand-point-right"></i>  Circle area</h3>
+                        <p>What are the dimensions of your circles?</p>
+                    </div>
+                    <!-- Shape image -->
+                    <div class="image">
+                        <img src="./images/circle_area.png" alt="">
+                    </div>
+                    <!-- Form -->
+                    <div class="form">
+                        <input type="text" placeholder="Diameter (D)" id="diameter" value="">
+                        <button id="circle_btn" onclick="circle()">Calculate</button>
+                        
+                    </div>
+                    <!-- Result -->
+                    <div class="result">
+                        <ul>
+                            <li>Area: <span id="circle_area"></span></li>
+                            <li>Perimetro: <span id="circle_perimeter"></span></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <!-- 👉 Trapeze -->
+                <section class="card">
+                    <!-- Subtitle -->
+                    <div class="subtitle">
+                        <hr>
+                        <h3><i class="far fa-hand-point-right"></i>  Trapeze area</h3>
+                        <p>What are the dimensions of your Trapeze?</p>
+                    </div>
+                    <!-- Shape image -->
+                    <div class="image">
+                        <img src="./images/trapeze_area.png" alt="">
+                    </div>
+                    <!-- Form -->
+                    <div class="form">
+                        <input type="text" placeholder="Top (b)" id="top_tp" value="">
+                        <input type="text" placeholder="Base (B)" id="base_tp" value="">
+                        <input type="text" placeholder="Height (h)" id="height_tp" value="">
+                        <button id="trapeze_btn" onclick="trapeze()">Calculate</button>
+                        
+                    </div>
+                    <!-- Result -->
+                    <div class="result">
+                        <ul>
+                            <li>Area: <span id="trapeze_area"></span></li>
+                        </ul>
+                    </div>
+                </section>
+
+            </section>
+
+        </section>    
+
+        <script src="./script.js"></script>
+
+    </body>
+
+</html>
